@@ -182,7 +182,10 @@
 
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 /*-------------------------------------------*\
     IMAGEN PRINCIPAL
 \*-------------------------------------------*/
@@ -220,7 +223,10 @@
 
 .gallery-thumbs{
     margin-top: 20px;
+<<<<<<< Updated upstream
     order: 0;
+=======
+>>>>>>> Stashed changes
 }
 
 .gallery-thumbs img {
@@ -230,10 +236,17 @@
 }
 
     .gallery-thumbs .swiper-slide{
+<<<<<<< Updated upstream
         padding: 15px;
         display: flex;
         align-items: center;
         order: 1;
+=======
+        
+        padding: 15px;
+        display: flex;
+        align-items: center;
+>>>>>>> Stashed changes
     }
 
     .gallery-thumbs .swiper-slide-thumb-active img {
@@ -252,7 +265,10 @@
         margin-top: -40px;
         margin-bottom: 20px;
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     
     .gallery-thumbs .swiper-slide {
         height: auto !important;
@@ -263,7 +279,16 @@
     .swiper-container-vertical>.swiper-wrapper {
         flex-direction: row;
     }
+<<<<<<< Updated upstream
 }
 
+=======
+
+    .ult {
+        display: none;
+    }
+
+}
+>>>>>>> Stashed changes
 
 
