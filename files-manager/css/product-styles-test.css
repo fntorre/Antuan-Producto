@@ -12,6 +12,14 @@
     background: #fff;
 }
 
+.deskin{
+    display: none;
+}
+
+.mbin {
+    display: block;
+}
+
 #product-page #box-bread-brumb li a, #product-page #box-bread-brumb li a span {
     color: #000;
     font-family: 'Spartan';
@@ -24,5 +32,29 @@
 #box-bread-brumb li:before {
     content: "/";
     color: #000;
+}
+
+/* ESTILOS INFORMACION PRODUCTO */
+
+.product-details .product-name h1 {
+    font-weight: bold;
+}
+
+.product-name {
+    line-height: 1.4em;
+}
+
+
+
+@media (min-width:768px){
+
+    .deskin{
+        display: block;
+    }
+    
+    .mbin {
+        display: none;
+    }
+
 }
 

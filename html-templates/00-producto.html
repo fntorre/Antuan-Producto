@@ -54,7 +54,62 @@
                 <div id="box-bread-brumb" class="hidden-xs hidden-md">
                     <vtex.cmc:breadCrumb />
                 </div>
-            </section>    
+                <div class="row product-details">
+                    <div class="col-xs-12 col-sm-8 details-desktop">
+                     
+                        <div class="product-name mbin">
+                            <h1>
+                                <vtex.cmc:productName />
+                            </h1>
+                        </div>
+                        <div class="product-model mbin">
+                            <p>Modelo</p>
+                            <vtex.cmc:productReference />
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 product-info-cont">
+                        <div class="product-info">
+
+                            <div class="product-name deskin">
+                                <h1>
+                                    <vtex.cmc:productName />
+                                </h1>
+                            </div>
+                            <div class="product-model deskin">
+                                <p>Modelo</p>
+                                <vtex.cmc:productReference />
+                            </div>
+
+                            <div class="price-box">
+                                <!--  Component: Sellers -->
+                                <vtex.cmc:SellerOptions />
+
+                                <!--  Component: Price -->
+                                <vtex.cmc:skuPrice />
+
+                                <!--  Component: Sales channels -->
+                                <vtex.cmc:SalesChannelDropList />
+
+                                <!--  Component: Addicional services -->
+                                <vtex.cmc:stockKeepingUnitService />
+
+                                <!--  Component: Payment methods -->
+                                <vtex.cmc:OtherPaymentMethod />
+                            </div><!-- .price-box -->
+
+                            <div class="qtySelector">
+                                <div class="cont">
+                                    <vtex.cmc:stockKeepingUnitAmountAndUnitSelection />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
