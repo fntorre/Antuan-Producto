@@ -181,10 +181,184 @@
     }
 
 }
+<<<<<<< Updated upstream
 
 <<<<<<< Updated upstream
 
 =======
+>>>>>>> Stashed changes
+=======
+/* ESTILOS GLOBALES */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+
+*{
+  font-family: 'Spartan', sans-serif;
+}
+
+#product-page .page {
+    background: #fff;
+}
+
+.deskin,.talle-new .specification, .talle-new input, .buy-button-box svg, .buy-button-box i.fa.fa-lock {
+    display: none;
+}
+
+.mbin {
+    display: block;
+}
+
+#product-page #box-bread-brumb li a, #product-page #box-bread-brumb li a span {
+    color: #000;
+    font-family: 'Spartan';
+}
+
+.bread-crumb span {
+    font-size: 1em;
+}
+
+#box-bread-brumb li:before {
+    content: "/";
+    color: #000;
+}
+
+/* ESTILOS INFORMACION PRODUCTO */
+
+.product-info {
+    grid-template-columns: 100%;
+}
+
+.product-details .product-name h1 {
+    font-weight: bold;
+}
+
+.fn.productName {
+    line-height: 1.4;
+}
+
+.product-details .product-model {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+
+.product-details .product-model {
+    display: flex;
+    color: #292C2F;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.skuListPrice {
+    display: none;
+}
+
+.price-box .descricao-preco .valor-dividido {
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+.sku-selector-container {
+    display: block !important;
+}
+
+/* TALLE */
+
+.talletit {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.talle-popup svg {
+    float: left;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.talle-popup {
+    margin-left: -15px;
+    color: #d1aa9c;
+    cursor: pointer;
+}
+
+.talle-new {
+    margin-bottom: 15px;
+}
+
+.talletit {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.talle-new .dimension-Medida {
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid #ddd;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.talle-new .dimension-Medida:hover {
+    background-color: #fff8ee;
+}
+
+.talle-new .dimension-Medida.checked.sku-picked {
+    background-color: #f3f3f3;
+    cursor: auto;
+    pointer-events: none;
+    font-weight: 700;
+}
+
+.dimension-Medida.item_unavaliable {
+    opacity: 0.45;
+    pointer-events: none;
+    border: #f9f9f9 1px solid;
+    font-weight: 200;
+}
+
+
+
+
+@media (min-width:768px){
+
+    .deskin{
+        display: block;
+    }
+    
+    .mbin {
+        display: none;
+    }
+     
+    .product-model.mbin {
+        display: none;
+    }
+
+    .price-box .descricao-preco .valor-por strong {
+    font-size: 25px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 95% !important;
+        max-width: 1400px !important;
+    }
+
+    .sugerencias .price {
+        margin-top: -30px;
+    }
+
+}
+
 >>>>>>> Stashed changes
 /*-------------------------------------------*\
     IMAGEN PRINCIPAL
@@ -200,9 +374,13 @@
     padding-bottom: 40px;
 }
 
+<<<<<<< Updated upstream
     .gallery-prod .swiper-slide{
         /* padding: 15px; */
     }
+=======
+    
+>>>>>>> Stashed changes
 
     .gallery-prod .swiper-button-next,
     .gallery-prod .swiper-button-prev{
@@ -224,7 +402,10 @@
 .gallery-thumbs{
     margin-top: 20px;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     order: 0;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
@@ -237,15 +418,21 @@
 
     .gallery-thumbs .swiper-slide{
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         padding: 15px;
         display: flex;
         align-items: center;
         order: 1;
 =======
+=======
+>>>>>>> Stashed changes
         
         padding: 15px;
         display: flex;
         align-items: center;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 
@@ -255,7 +442,20 @@
         -moz-box-shadow: 1px 3px 5px 1px #dec291;
         box-shadow: 1px 3px 5px 1px #dec291;
     }
+<<<<<<< Updated upstream
 
+=======
+    
+    .gallery-thumbs {
+        order: 0;
+    }
+
+    .gallery-prod {
+        order: 1;
+    }
+
+   
+>>>>>>> Stashed changes
 @media (max-width:768px){
 
     .product-details .product-image {
@@ -266,7 +466,10 @@
         margin-bottom: 20px;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     
@@ -280,15 +483,21 @@
         flex-direction: row;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 }
 
 =======
+=======
+>>>>>>> Stashed changes
 
     .ult {
         display: none;
     }
 
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
