@@ -1,0 +1,28 @@
+/* ESTILOS GLOBALES */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+
+*{
+  font-family: 'Spartan', sans-serif;
+}
+
+#product-page .page {
+    background: #fff;
+}
+
+#product-page #box-bread-brumb li a, #product-page #box-bread-brumb li a span {
+    color: #000;
+    font-family: 'Spartan';
+}
+
+.bread-crumb span {
+    font-size: 1em;
+}
+
+#box-bread-brumb li:before {
+    content: "/";
+    color: #000;
+}
+
