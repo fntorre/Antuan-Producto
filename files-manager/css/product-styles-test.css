@@ -36,12 +36,33 @@
 
 /* ESTILOS INFORMACION PRODUCTO */
 
+.product-info {
+    grid-template-columns: 100%;
+}
+
 .product-details .product-name h1 {
     font-weight: bold;
 }
 
-.product-name {
-    line-height: 1.4em;
+.fn.productName {
+    line-height: 1.4;
+}
+
+.product-details .product-model {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+
+.product-details .product-model {
+    display: flex;
+    color: #292C2F;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.skuListPrice {
+    display: none;
 }
 
 
@@ -55,6 +76,21 @@
     .mbin {
         display: none;
     }
+     
+    .product-model.mbin {
+        display: none;
+    }
 
 }
 
+@media (min-width: 1200px){
+    .container {
+        width: 95% !important;
+        max-width: 1400px !important;
+    }
+
+    .sugerencias .price {
+        margin-top: -30px;
+    }
+
+}
