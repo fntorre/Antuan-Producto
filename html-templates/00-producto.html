@@ -84,23 +84,6 @@
                             </div>
                         </div><!-- .product-image -->
 
-                        <div class="product-image">
-                            <div style="display:none;">
-                                <vtex.cmc:ProductImage />
-                            </div>
-                            <div class="swiper-container gallery-prod">
-                                <div class="swiper-wrapper"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="flags" style="display:none;">
-                                    <vtex.cmc:discountHightLight />
-                                </div>
-                            </div>
-                            <div class="swiper-container gallery-thumbs">
-                                <div class="swiper-wrapper"></div>
-                            </div>
-                        </div><!-- .product-image -->
-
                     </div>
 
                     <div class="col-xs-12 col-sm-4 product-info-cont">
@@ -360,7 +343,25 @@
         <vtex:template id="Footer" />
         <!-- /SubTemplate: Footer -->
         
+        <!-- MODALES -->
+        <!-- MODAL TALLES -->
+        <div class="modal-cont" style="display: none;">
+            <div class="modal-cont1 modal-encuentraTalla">
+                <div class="close"
+                    onclick="javascript: jQuery(event.currentTarget).closest('.modal-cont').fadeToggle();jQuery('#modal-bg').removeClass('active');">
+                    <script>
+                    </script>×
+                    <script>
 
+                    </script>
+                </div>
+                <div class="cont">
+                    <vtex:contentPlaceHolder id="modalTalla" />
+                </div>
+            </div>
+        </div>
+
+       
     </div>
 </body>
 
