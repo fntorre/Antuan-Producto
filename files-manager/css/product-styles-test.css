@@ -157,6 +157,19 @@
 
 }
 
+@media (max-width:768px){
+    .buy-button-box {
+        position: fixed;
+        bottom: -15px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .product-model.deskin {
+        display: none;
+    }
+}
+
 @media (min-width: 1200px){
     .container {
         width: 95% !important;
