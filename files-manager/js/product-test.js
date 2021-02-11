@@ -50,3 +50,40 @@ function imgCarrusel(){
         $(".gallery-prod img").magnify();
     }
 }
+
+
+// COMPRAR JUNTOS
+setTimeout(function (){
+    
+    content1 = $(".skuListPrice").html();
+    content2 = $(".skuBestPrice").html();
+
+    $("<em class='valor-de price-list-price' style='display: block;'><strong class='old-price-usd'>" + content1 +"</strong></em>").insertAfter(".skuListPrice");
+    $("<em class='valor-por price-best-price' style='display: block;'>Por: <strong class='best-price-usd'>" + content2 +"</strong></em>").insertAfter(".skuBestPrice");
+
+    $("#divCompreJunto tr").first().addClass('activo');
+
+    $("td.plus").on("click", function(){
+        if($("#divCompreJunto tr.activo").next().length > 0) {
+            $("#divCompreJunto tr.activo").removeClass('activo').next().addClass("activo");
+        }else{
+            $("#divCompreJunto tr.activo").removeClass('activo');
+            $("#divCompreJunto tr").first().addClass('activo');
+        }
+    })
+
+    if ($("#divCompreJunto table").length > 0){
+        $("#junto-tit").css("display", "block");
+        $("#cambiar").css("display", "block");
+    }
+
+    setTimeout(function() {
+    $('td.buy').html(function () {
+        return $(this).html().replace(/Por apenas/g,'').replace(/de/g,'').replace(/Comprando junto você economiza:/g, 'Comprando ambos productos ahorras: '); 
+    });
+    }, 1500);
+
+    $("#divTitulo").text('¡Duplica los beneficios!')
+    $(".comprar-junto a").text("¡Quiero los dos!")
+
+}, 4000);

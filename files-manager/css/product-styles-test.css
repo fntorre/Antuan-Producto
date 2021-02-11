@@ -492,3 +492,166 @@ th.name-field.Modelo-de-Eslabon {
         margin-top: -30px;
     }
 }
+
+/* COMPRE JUNTO */
+
+table tbody tr, table tbody tr td.equal {
+    display: none;
+}
+
+
+#divCompreJunto {
+    margin-top: 35px;
+}
+
+h4#divTitulo {
+    font-size: 0px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+h4#divTitulo::after {
+    content: "¡Llevalos Juntos!";
+    font-size: 20px;
+    font-family: Spartan, serif;
+    font-weight: bold;
+    padding-bottom: 7px;
+    border-bottom: 4px solid rgb(185, 142, 127);
+}
+
+#divCompreJunto table {
+    width: 65%;
+    margin-left: auto;
+    margin-top: -10px;
+}
+
+table tbody {
+    position: relative;
+}
+
+table tbody tr.activo {
+    display: block;
+    background-color: #fff8ee;
+    padding: 25px;
+}
+
+td.itemA, td.itemB {
+    background-color: white;
+    box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 10%);
+}
+
+.itemA a, .itemB A {
+    font-size: 17px !important;
+    display: table;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;
+    font-weight: bold;
+}
+
+table tbody tr td h3 {
+    width: 100%;
+}
+
+#divCompreJunto h3 a {
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+}
+
+td.plus {
+    position: relative;
+    width: 40px;
+    text-align: center;
+}
+
+td.plus:before {
+    content: "\f021";
+    font-family: FontAwesome;
+    background: #d1aa9c;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 19px !important;
+    border-radius: 50%;
+    transform: translateX(-25%) translateY(300%);
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: -15px;
+}
+
+table tbody tr td:nth-child(5) {
+    font-weight: 600;
+}
+
+.itemA, .itemB, td.buy {
+    width: 33%;
+}
+
+td.buy {
+    text-align: center;
+    padding: 5px 30px;
+}
+
+#divCompreJunto .buy strong:nth-child(1), #divCompreJunto .buy strong:nth-child(2) {
+    display: none;
+}
+
+#divCompreJunto .buy :nth-child(4) {
+    display: block !important;
+    margin: 10px auto;
+    font-weight: bold;
+    color: #a94442;
+}
+
+.activo .cjunt {
+    font-size: 26px;
+}
+
+td.plus, td.equal {
+    font-size: 32px;
+}
+
+p.comprar-junto a {
+    background: #d1aa9c;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p.comprar-junto a:hover {
+    color: white;
+}
+
+#divCompreJunto p.more {
+    display: none !important;
+}
+
+@media (max-width: 768px){
+    #divCompreJunto table {
+        width: 100%;
+    }
+
+    .itemA, .itemB {
+        width: 50%;
+    }
+
+    td.buy {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px){
+    td.plus:before {
+        top: 40%;
+        right: -12px;
+    }
+}
