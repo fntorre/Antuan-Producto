@@ -1,0 +1,478 @@
+body.show{
+    overflow: hidden;
+}
+
+#modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000047;
+    z-index: 1009;
+    display: none;
+}
+    #modal-overlay.show{
+        display: block;
+    }
+
+.modal-innew{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    z-index: 9999999;
+    height: 70vh;
+    width: 100%;
+    
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    transition: all .4s ease-in-out;
+    transform: translate3d(0,100%,0);
+}
+
+.modal-innew.show{
+    transform: translate3d(0,0,0);
+}
+
+    .modal-innew .content2{
+        height: 90%;
+        overflow-y: scroll;
+        text-align: center;
+    }
+        .modal-innew .title{
+            padding-bottom: 15px;
+        }
+            .modal-innew .title h5{
+                letter-spacing: 9.72px;
+                font-size: 4.5vw;
+                margin-top: 30px;
+                font-family: 'Spartan';
+            }
+
+    .modal-innew .close-modal{
+        height: 10%;
+        text-align: center;
+        padding-top: 8px;
+    }
+
+@media (min-width:1024px){
+
+    .modal-innew{
+        width: 56%;
+        left: 22%;
+        height: 75%;
+        top: 0%;
+        background: #fff;
+        transform: translateY(-200%);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .modal-innew.show{
+        transform: translateY(10%);
+    }
+
+        .modal-innew .content{
+            height: 100%;
+            /* padding-top: 4%; */
+            overflow: unset;
+        }
+
+        .modal-innew .close-modal{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            padding-top: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+            height: 7%;
+            border-radius: 20px;
+        }
+
+        .modal-innew .content2{
+            height: 100%;
+            overflow-y: auto;
+        }
+
+            .modal-innew .content2 .title h5{
+                font-size: 25px;
+                font-family: 'Spartan';
+                padding-top: 20px;
+            }
+
+        
+        .modal-innew .content2::-webkit-scrollbar-track {
+            background-color: #F4F4F4;
+        }
+        .modal-innew .content2::-webkit-scrollbar {
+            width: 7px;
+            background: #F4F4F4;
+        }
+        .modal-innew .content2::-webkit-scrollbar-thumb {
+            background: #dad7d7;
+        }
+
+}
+
+/*-------------------------------------------*\
+    METODOS DE PAGO
+\*-------------------------------------------*/
+
+#content-other-payment{
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.list-other-payment{
+    height: 100%;
+    overflow: auto;
+}
+
+    #content-other-payment .list-other-payment > div{
+        padding: 8px;
+        border-bottom: 1px solid #e7e7e7;
+        position: relative;
+    }
+        #content-other-payment .list-other-payment h5{
+            margin-bottom: 4%;
+            font-family: "Spartan";
+            color: #646464;
+        }
+
+    #content-other-payment .list-other-payment .pago-efectivo .list,
+    #content-other-payment .list-other-payment .tarjetas-debito .list{
+        display: none;
+    }
+
+    #content-other-payment .list-other-payment .tarjetas-debito.show .list,
+    #content-other-payment .list-other-payment .pago-efectivo.show .list{
+        display: flex;
+    }
+        #content-other-payment .list-other-payment .pago-efectivo .list > div,
+        #content-other-payment .list-other-payment .tarjetas-debito .list > div{
+            width: 33%;
+            height: 50px;
+        }
+
+    #content-other-payment .list-other-payment .tarjetas-debito .valor-un-pago{
+        position: absolute;
+        top: 18px;
+        right: 5%;
+        color: #d1aa9c;
+        font-weight: bold;
+    }
+
+
+    #content-other-payment .list-other-payment .tarjetas-credito{
+        border-bottom: none;
+    }
+
+    #content-other-payment .list-other-payment .tarjetas-credito .list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        #content-other-payment .list-other-payment .tarjetas-credito .list > div{
+            width: 30%;
+            height: 50px;
+            margin: 10px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            position: relative;
+        }
+            #content-other-payment .list-other-payment .tarjetas-credito .list > div > div{
+                color: #d1aa9c;
+                font-weight: bold;
+                position: absolute;
+                top: -8px;
+                left: 9%;
+                font-size: 3.2vw;
+                background: rgb(255, 255, 255);
+            }
+
+.t-op{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 55vh;
+    z-index: 1010;
+    width: 100%;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    transform: translate3d(0,100%,0);
+    font-family: "Spartan";
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+.t-op.show{
+    transform: translate3d(0,0,0);
+}
+    .t-op .volver{
+        display: block;
+        cursor: pointer;
+        margin-bottom: 22px;
+    }
+        .t-op .volver > div{
+            height: 50px;
+        }
+            .t-op .volver > div:before,
+            .t-opw .volver > div:before{
+                font-weight: 900;
+                color: #000000;
+                content: "<";
+                float: left;
+                padding-top: 15px;
+                font-size: 20px;
+                padding-left: 3px;
+            }
+
+
+.tbl-payment-system{
+    display: table !important;
+    width: 100%;
+}
+
+    .tbl-payment-system tr{
+        border-bottom: 1px solid #eee;
+        display: table-row;
+        font-size: 11px;
+    }
+
+    .tbl-payment-system td,
+    .tbl-payment-system th{
+        padding: 10px 3px;
+    }
+    .tbl-payment-system td{
+        color: #828080;
+    }
+    .tbl-payment-system th{
+        color: #646464;
+    }
+
+        .tbl-payment-system td.parcelas{
+            width: 75%;
+        }
+            .tbl-payment-system td.parcelas span{
+                color: #d1aa9c;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+@media (min-width:1024px){
+
+    #formas-pago .txt{
+        padding: 0 1%;
+    }
+
+    .list-other-payment{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        #content-other-payment .list-other-payment h5{
+            margin-bottom: 10px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #content-other-payment .list-other-payment .tarjetas-debito{
+            width: 50%;
+            border-bottom: none;
+        }
+
+        #content-other-payment .list-other-payment .tarjetas-credito{
+            width: 100%;
+        }
+
+            #content-other-payment .list-other-payment .tarjetas-credito .list{
+                justify-content: flex-start;
+            }
+
+                #content-other-payment .list-other-payment .tarjetas-credito .list > div{
+                    width: 12%;
+                    margin: 1%;
+                }
+                    #content-other-payment .list-other-payment .tarjetas-credito .list > div > div{
+                        font-size: 10px;
+                        top: -6px;
+                    }
+
+
+
+    .t-op{
+        position: relative;
+        display: none;
+        height: auto;
+        border-radius: 0;
+        overflow: unset;
+        padding: 2%;
+    }        
+        .tbl-payment-system td,
+        .tbl-payment-system th{
+            padding: 5px 3px;
+        }
+
+}
+
+
+/*-------------------------------------------*\
+    LOGOS DE TARJETAS
+\*-------------------------------------------*/
+
+
+.list > div,
+.t-op .volver > div,
+.t-opw .volver > div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+.list > div.pagofacil,
+.t-op .volver > div.pagofacil{
+    background-image: url("/arquivos/logo-pago-facil.png");
+}
+
+.list > div.rapipago,
+.t-op .volver > div.rapipago{
+    background-image: url("/arquivos/logo-rapipago.png");
+}
+
+.list > div.redlink,
+.t-op .volver > div.redlink{
+    background-image: url("/arquivos/logo-link.png");
+}
+
+
+
+.list > div.visa,
+.t-op .volver > div.visa{
+    background-image: url("/arquivos/logo-visa.png");
+    order: 2;
+}
+
+.list > div.maestro,
+.t-op .volver > div.maestro{
+    background-image: url("/arquivos/logo-maestro.png");
+}
+
+.list > div.mastercard,
+.t-op .volver > div.mastercard{
+    background-image: url("/arquivos/logo-mastercard.png");
+    order: 3;
+}
+
+
+
+.list > div.americanexpress,
+.t-op .volver > div.americanexpress{
+    background-image: url("/arquivos/logo-american-express.png");
+    order: 5;
+}
+
+.list > div.diners,
+.t-op .volver > div.diners{
+    background-image: url("/arquivos/logo-diner-club.png");
+    order: 6;
+}
+
+.list > div.cabal,
+.t-op .volver > div.cabal{
+    background-image: url("/arquivos/logo-cabal.png");
+    order: 4;
+}
+
+.list > div.nativa,
+.t-op .volver > div.nativa{
+    background-image: url("/arquivos/logo-nativa.png");
+    order: 8;
+}
+
+.list > div.naranja,
+.t-op .volver > div.naranja{
+    background-image: url("/arquivos/logo-naranja.png");
+    order: 7;
+}
+
+.list > div.shopping,
+.t-op .volver > div.shopping{
+    background-image: url("/arquivos/logo-tarjeta-shopping.png");
+    order: 10;
+}
+
+.list > div.nevada,
+.t-op .volver > div.nevada{
+    background-image: url("/arquivos/logo-nevada.png");
+    order: 9;
+}
+
+.list > div.mercadopago-patagonia,
+.t-op .volver > div.mercadopago-patagonia{
+    background-image: url("/arquivos/logo-patagonia.png");
+}
+
+.list > div.cordial,
+.t-op .volver > div.cordial{
+    background-image: url("/arquivos/logo-cordial.png");
+}
+
+.list > div.cencosud,
+.t-op .volver > div.cencosud{
+    background-image: url("/arquivos/logo-cencosud.png");
+}
+
+.list > div.argencard,
+.t-op .volver > div.argencard{
+    background-image: url("/arquivos/logo-argencard.png");
+}
+
+.list > div.tarjetatuya,
+.t-op .volver > div.tarjetatuya{
+    background-image: url("/arquivos/logo-tarjetatuya.png");
+    order: 1;
+}
+
+@media (min-width:1024px){
+    
+    .tarjetas-credito .list > div{
+        background-position: right;
+    }
+        .tarjetas-credito .list > div:before{
+            content: "a";
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            font-size: 0;
+            border-radius: 100%;
+            border: 1px solid #d1aa9c;
+        }
+        .tarjetas-credito .list > div.active:before{
+            background-color: #d1aa9c;
+            border: 2px solid #d1aa9c;
+        }
+        .tarjetas-credito .list > div.active{
+            border: 2px solid #d1aa9c !important;
+        }
+
+        .tbl-payment-system tr {
+            font-size: 12px;
+        }
+
+}
