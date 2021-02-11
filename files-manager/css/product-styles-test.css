@@ -301,3 +301,103 @@
         margin-bottom: 100px;
     }
 }
+
+/* CARACTERISTICAS */
+
+.description .title {
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.description .title.active {
+    background-color: #fafafa;
+    font-family: 'Spartan';
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+#caracteristicas {
+    margin-bottom: 70px;
+}
+
+.description #caracteristicas tbody {
+    display: block;
+    padding: 0 15px;
+}
+
+.description #caracteristicas table {
+    background-color: #fafafa;
+}
+
+.description #caracteristicas th {
+    text-transform: none;
+    color: #3C3C3C;
+    width: auto;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.description #caracteristicas td {
+    color: #3C3C3C;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+th.name-field {
+    padding-left: 52px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-size: 15%;
+}
+
+td.value-field {
+    padding-left: 52px;
+    margin-top: -29px;
+
+}
+
+th.name-field.Detalle {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-piedras.png);
+}
+
+th.name-field.Material {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-material.png);
+}
+
+th.name-field.Peso-aproximado {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-peso.png);
+}
+
+th.name-field.Modelo-De-Colgante {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-modelo.png);
+}
+
+th.name-field.Terminacion {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-color.png);
+}
+
+th.name-field.Fabricacion, th.name-field.Ancho-de-Esclavas , th.name-field.Diametro-de-Esclavas {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-medida.png);
+}
+
+th.name-field.Modelo-de-Eslabon {
+    background-image: url(https://www.antuanjoyerias.com/arquivos/caracteristicas-antuan-modelo.png);
+}
+
+
+
+@media (min-width: 768px){
+    .description .labels {
+        border: none;
+    }
+
+    .description #caracteristicas tbody {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
