@@ -598,7 +598,7 @@ td.buy {
     padding: 5px 30px;
 }
 
-#divCompreJunto .buy strong:nth-child(1), #divCompreJunto .buy strong:nth-child(2) {
+#divCompreJunto .buy strong:nth-child(1), #divCompreJunto .buy strong:nth-child(2), strong.best-price-usd  {
     display: none;
 }
 
@@ -653,5 +653,66 @@ p.comprar-junto a:hover {
     td.plus:before {
         top: 40%;
         right: -12px;
+    }
+}
+
+/* CARRUSEL RELACIONADOS */
+
+.carrusel-prod.type-1 .swiper-slide {
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-right: 19px !important;
+}
+
+.carrusel-prod .swiper-slide {
+    width: 70%;
+    background-color: white;
+    padding: 12px;
+}
+
+.vitrina .banderas, .vitrina .product_codigo, .vitrina btn.comprar {
+    display: none;
+}
+
+.vitrina span.product-name {
+    color: black;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.vitrina .product-best-price {
+    display: block;
+}
+
+.vitrina span.installment {
+    font-size: 12px;
+    height: 30px;
+    display: block;
+}
+
+@media (min-width: 768px){
+    .product-info {
+        grid-template-columns: 100%;
+    }
+
+    .carrusel-prod .swiper-button-prev, .carrusel-prod .swiper-button-next {
+        display: flex;
+        transform: scale(.5);
+        height: 100%;
+        top: 0;
+        width: 40px;
+    }
+
+    .swiper-button-prev {
+        margin-left: -20px;
+    }
+
+    .swiper-button-next {
+        margin-right: -15px;
     }
 }
