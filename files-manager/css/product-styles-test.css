@@ -272,3 +272,32 @@
         }
     
 }
+
+/* DESCRIPCION */
+
+.description-2.product-description-box {
+    margin-bottom: 20px;
+}
+
+.description-2 h3.title {
+    margin-top: 40px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+}
+
+.linea {
+    border-bottom: solid 4px #B98E7F;
+    padding-bottom: 6px;
+}
+
+@media (min-width: 768px){
+
+    .description-2.product-description-box {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+}
