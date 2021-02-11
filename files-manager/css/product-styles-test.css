@@ -765,3 +765,26 @@ p.comprar-junto a:hover {
         display: none;
     }
 }
+
+/* WITGETS */
+
+@media (max-width: 768px){
+    iframe#wspIframe {
+    bottom: 34px !important;
+    }
+
+    iframe#wspIframe.ldkwsp-expanded-height {
+        height: 95% !important;
+    }
+
+    
+    iframe#chatIframe
+     {
+    bottom: 42px !important;
+    
+    }
+
+    iframe#chatIframe.expanded-height {
+        height: 95% !important;
+    }
+}
