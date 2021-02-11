@@ -716,3 +716,9 @@ p.comprar-junto a:hover {
         margin-right: -15px;
     }
 }
+
+@media (max-width: 768px){
+    .carrusel-prod .swiper-button-next, .carrusel-prod .swiper-button-prev {
+        display: none;
+    }
+}
