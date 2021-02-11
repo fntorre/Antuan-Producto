@@ -598,7 +598,7 @@ td.buy {
     padding: 5px 30px;
 }
 
-#divCompreJunto .buy strong:nth-child(1), #divCompreJunto .buy strong:nth-child(2), strong.best-price-usd  {
+#divCompreJunto .buy strong:nth-child(1), #divCompreJunto .buy strong:nth-child(2), strong.best-price-usd, hr.buy-together  {
     display: none;
 }
 
