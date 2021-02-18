@@ -840,7 +840,58 @@
                     </script>
                 </div>
                 <div class="cont">
-                    <vtex:contentPlaceHolder id="modalCalcEnvio" />
+                    <div class="modal-calc-envio">
+                        <div class="header">
+                        <div class="costo-envio">
+                        <div class="envio-body">
+                            <vtex.cmc:shippingValue/>
+                            <script type="text/javascript">
+                                $(document).ready( function(){
+                                    ShippingValue();
+                                });
+                            </script>
+                            <a href="https://www.correoargentino.com.ar/formularios/cpa" class="bt lnkExterno" target="_blank">No se mi codigo postal</a>
+                        </div></div>
+                        <div class="antuan-envios-plus">
+                        <div class="col"><p>Retiro Gratis en nuestras sucursales.</p></div>
+                        <div class="col"><p>Envío Gratis con tu compra superior a $5000.</p></div>
+                        <div class="col"><p>Envíos a todo el país.</p></div>
+                        </div>
+                        <h3>Sucursales</h3>
+                        </div>
+                        <div class="grid">
+                        <div class="col">
+                        <img src="/arquivos/sucursal1.png" alt="Sucursal Corrientes Capital" />
+                        <div class="col-nav">
+                        <span class="stars"><i class="star active"></i><i class="star active"></i><i class="star active"></i><i class="star active"></i><i class="star"></i>
+                        <span>4,5</span></span>
+                        <button class="how-to">Cómo llegar</button>
+                        </div>
+                        <p>Junin 1446, W3400 AWD,
+                        <b>Corrientes Capital.</b>
+                        Tel: 0379 443-3512</p>
+                        <p><b>Horarios:</b>
+                        Lunes a Viernes: de 08:00hs a 12:00hs - 16:30hs a 20:00hs.
+                        Sábado: de 8:00hs a 12:00hs - 17:00hs a 21:00hs.
+                        Domingo: Cerrado.</p>
+                        </div>
+                        <div class="col">
+                        <img src="/arquivos/sucursal2.png" alt="Sucursal Resistencia Chaco" />
+                        <div class="col-nav">
+                        <span class="stars"><i class="star active"></i><i class="star active"></i><i class="star active"></i><i class="star active"></i><i class="star"></i>
+                        <span>4,5</span></span>
+                        <button class="how-to">Cómo llegar</button>
+                        </div>
+                        <p>Juan Domingo Perón 138, 3500, H3506KJP,
+                        <b>Resistencia Chaco.</b>
+                        Tel: 0362 444-2271</p>
+                        <p><b>Horarios:</b>
+                        Lunes a Viernes: de 08:00hs a 12:00hs - 17:00hs a 21:00hs.
+                        Sábado: de 8:00hs a 12:30hs - 17:00hs a 21:00hs.
+                        Domingo: Cerrado.</p>
+                        </div>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -902,6 +953,7 @@
 <script src="/arquivos/swiper-bundle.min.js"></script>
 <script src="/arquivos/carruseles-test.js"></script>
 <script src="/arquivos/product-test.js"></script>
+<script src="/arquivos/envio-test.js"></script>
 <vtex:template id="commonScripts" />
 <script src="/arquivos/custom-product.js?v=146"></script>
 <script src="/arquivos/payment.js"></script>

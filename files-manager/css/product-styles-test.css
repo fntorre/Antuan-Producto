@@ -788,3 +788,121 @@ p.comprar-junto a:hover {
         height: 95% !important;
     }
 }
+
+/* modal envio */
+
+.modal-calc-envio #popupCalculoFreteWrapper,
+.modal-calc-envio .quantity,
+.modal-calc-envio .footer,
+.modal-calc-envio .freight-values thead,
+.modal-calc-envio .cep-busca,
+.contentWrapper .header{
+    display: none;
+}
+
+.modal-calc-envio table tbody tr {
+    display: block;
+}
+
+.costo-envio {
+    padding: 20px;
+    background-color: #d1aa9c21;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.modal-calc-envio .prefixo{
+    display: inline-block;
+    width: 90%;
+    font-size: 0;
+}
+
+.modal-calc-envio .prefixo:before {
+    content: "Consulte el tiempo de envío y los costos";
+    font-size: 15px;
+}
+
+.modal-calc-envio #txtCep{
+    display: block;
+    width: 100%;
+    padding-left: 2%;
+    border: #d1aa9c solid 2px;
+}
+
+.modal-calc-envio #btnFreteSimulacao{
+    width: 9%;
+    background-image: linear-gradient(to right,#d1aa9c,#a94442);
+    color: #fff;
+}
+
+.modal-calc-envio .freight-values{
+    padding-top: 3%;
+    overflow-y: scroll;
+    padding-right: 1%;
+    margin-bottom: 3%;
+}
+
+.modal-calc-envio .freight-values::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+.modal-calc-envio .freight-values::-webkit-scrollbar {
+    width: 7px;
+    background: #F4F4F4;
+}
+.modal-calc-envio .freight-values::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.modal-calc-envio .freight-values tbody{
+    border-radius: 4px;
+}
+
+.modal-calc-envio .freight-values tr{
+    border-bottom: 1px solid #d1aa9c61;
+    font-size: 12px;
+    color: #a94442;
+}
+
+.modal-calc-envio .freight-values tr td{
+    padding: 10px 20px;
+}
+
+.freight-values tr td:nth-child(1) {
+    background-color: #a9444208;
+    width: 120px;
+    font-weight: bold;
+}
+
+.antuan-envios-plus {
+    display: flex;
+}
+
+.antuan-envios-plus .col {
+    background-color: #a9444205;
+    margin: 3px;
+    border: none;
+    width: 33%;
+}
+
+.antuan-envios-plus .col p {
+    line-height: 1.5;
+    color: #a94442;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .modal-calc-envio #btnFreteSimulacao, .modal-calc-envio .prefixo, .antuan-envios-plus .col {
+        width: 100%;
+    }
+
+    .freight-values tr td:nth-child(1) {
+        width: 70px;
+    }
+
+    .antuan-envios-plus{
+        display: block;
+    }
+
+}
+
+
